@@ -1,0 +1,11 @@
+[package]
+name = "akuma-demo-git-server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+axum = "0.8"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net"] }
+gitserver-core = { git = "https://github.com/WJQSERVER/gitserver", rev = "3cec05b02eea3220c67782e4d9d0404d8b001aa3" }
+gitserver-http = { git = "https://github.com/WJQSERVER/gitserver", rev = "3cec05b02eea3220c67782e4d9d0404d8b001aa3" }
